@@ -1,0 +1,5 @@
+# Project exclude paths
+/spark_connector/project/project/target/
+/spark_connector/project/target/
+/spark_connector/target/
+/spark_connector/target/scala-2.12/classes/

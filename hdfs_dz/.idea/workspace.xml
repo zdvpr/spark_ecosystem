@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ba2511b-5ec5-46f3-8cad-5054fd97f837" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hdfs_dz" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hdfs_dz" type="f1a62948:ProjectNode" />
+                <item name="hdfs_dz" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hdfs_dz" type="f1a62948:ProjectNode" />
+                <item name="hdfs_dz" type="2d1252cf:ModuleNode" />
+                <item name="sbt tasks" type="d9357504:SbtViewContributor$SbtTasksGroupNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hdfs_dz" type="f1a62948:ProjectNode" />
+                <item name="hdfs_dz-build" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hdfs_dz" type="f1a62948:ProjectNode" />
+                <item name="hdfs_dz-build" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1qdzBeh3DQgJDph1ALPnpf7gnIO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="hdfs_dz" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="hdfs_dz" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="hdfs_dz" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="hdfs_dz [file:/Users/ruassd/trn/Scala/ecosystem/4_HDFS/hdfs_dz/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="hdfs_dz-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4847919769867" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="79092787" />
+        <entry key="$PROJECT_DIR$/project/assembly.sbt" value="1317329738" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2513440544" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../hdfs-scala-example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../otus_ecosystem/otus_dz2" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ba2511b-5ec5-46f3-8cad-5054fd97f837" name="Default Changelist" comment="" />
+      <created>1617424120336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617424120336</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4901" y="176" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1617533196560">
+      <screen x="4240" y="-100" width="1920" height="1080" />
+    </state>
+    <state x="578" y="273" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1680.977@0.23.1680.977" timestamp="1617510352792" />
+    <state x="4901" y="176" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/4240.-100.1920.1080/1680.-156.2560.1440/0.0.1680.1050@4240.-100.1920.1080" timestamp="1617533196560" />
+    <state x="4664" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617532416589">
+      <screen x="4240" y="-77" width="1920" height="1057" />
+    </state>
+    <state x="4664" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/4240.-77.1920.1057/1680.-133.2560.1417/0.23.1680.977@4240.-77.1920.1057" timestamp="1617532416589" />
+    <state x="5013" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1617467955071">
+      <screen x="4240" y="-77" width="1920" height="1057" />
+    </state>
+    <state x="5013" y="128" key="#com.intellij.ide.util.MemberChooser/4240.-77.1920.1057/1680.-133.2560.1417/0.23.1680.977@4240.-77.1920.1057" timestamp="1617467955071" />
+    <state x="4688" y="20" key="SettingsEditor" timestamp="1617425710011">
+      <screen x="4240" y="-77" width="1920" height="1001" />
+    </state>
+    <state x="4688" y="5" key="SettingsEditor/4240.-100.1920.1080/1680.-156.2560.1440/0.0.1680.1050@4240.-100.1920.1080" timestamp="1617424646377" />
+    <state x="4688" y="20" key="SettingsEditor/4240.-77.1920.1001/1680.-133.2560.1417/0.23.1680.1027@4240.-77.1920.1001" timestamp="1617425710011" />
+  </component>
+</project>

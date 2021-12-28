@@ -1,4 +1,8 @@
 # Project exclude paths
+/15_Structured_Streaming/project/project/target/
+/15_Structured_Streaming/project/target/
+/15_Structured_Streaming/target/
+
 /13_kafka/project/project/target/
 /13_kafka/project/target/
 /13_kafka/target/

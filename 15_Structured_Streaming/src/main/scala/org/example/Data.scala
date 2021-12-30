@@ -1,6 +1,6 @@
 package org.example
 
-case class Data(
+case class  Data(
     sepal_length: Double,
     sepal_width: Double,
     petal_length: Double,

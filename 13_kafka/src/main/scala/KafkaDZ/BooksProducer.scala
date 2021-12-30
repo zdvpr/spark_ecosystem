@@ -52,7 +52,7 @@ object BooksProducer {
         ("year" -> book.year) ~
         ("genre" -> book.genre)
       val msg = compact(render(jsonMsg))
-      producer.send(new ProducerRecord(topic, msg, msg))
+      producer.send(new ProducerRecord(topic, null, msg))
     }
 
     println("messages sended")

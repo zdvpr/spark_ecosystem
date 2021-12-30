@@ -1,9 +1,11 @@
 package org.example
 
-import com.typesafe.config._
+import com.typesafe.config.ConfigFactory
 import org.apache.spark.ml.PipelineModel
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.concat_ws
+
+
 
 object MLStructuredStreaming {
   def main(args: Array[String]): Unit = {
@@ -36,7 +38,6 @@ object MLStructuredStreaming {
     val input = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", inputBootstrapServers)
-//      .option("kafka.broker.list", inputBootstrapServers)
       .option("subscribe", inputTopic)
       .load()
       .selectExpr("CAST(value AS STRING)")

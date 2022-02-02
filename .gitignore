@@ -1,4 +1,15 @@
 # Project exclude paths
+/21_project/project/project/target/
+/21_projectproject/target/
+/21_project/target/
+/21_project/data/
+
+/21_project_crt_msg/project/project/target/
+/21_project_crt_msg/project/target/
+/21_project_crt_msg/target/
+/21_project_crt_msg/data/
+
+
 /15_Structured_Streaming/project/project/target/
 /15_Structured_Streaming/project/target/
 /15_Structured_Streaming/target/

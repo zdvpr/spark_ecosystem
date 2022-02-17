@@ -1,14 +1,23 @@
 # Project exclude paths
-/21_project/project/project/target/
-/21_projectproject/target/
-/21_project/target/
-/21_project/data/
+/21_project_hot_news_top/project/project/target/
+/21_project_hot_news_top/project/target/
+/21_project_hot_news_top/target/
+/21_project_hot_news_top/data/
 
-/21_project_crt_msg/project/project/target/
-/21_project_crt_msg/project/target/
-/21_project_crt_msg/target/
-/21_project_crt_msg/data/
+/21_project_hot_news_msg/project/project/target/
+/21_project_hot_news_msg/project/target/
+/21_project_hot_news_msg/target/
+/21_project_hot_news_msg/data/
 
+/21_project_hot_news_etl/project/project/target/
+/21_project_hot_news_etl/project/target/
+/21_project_hot_news_etl/target/
+/21_project_hot_news_etl/data/
+
+/21_project_hot_news_etl_day/project/project/target/
+/21_project_hot_news_etl_day/project/target/
+/21_project_hot_news_etl_day/target/
+/21_project_hot_news_etl_day/data/
 
 /15_Structured_Streaming/project/project/target/
 /15_Structured_Streaming/project/target/

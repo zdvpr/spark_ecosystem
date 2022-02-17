@@ -1,0 +1,275 @@
+ruassd@n-msk-macssd:~/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/21_project$ spark-submit ./target/scala-2.12/kafka-app-assembly-0.0.1.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/usr/local/Cellar/apache-spark/3.2.0/libexec/jars/spark-unsafe_2.12-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+22/02/02 07:21:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/02/02 07:21:08 INFO SparkContext: Running Spark version 3.2.0
+22/02/02 07:21:08 INFO ResourceUtils: ==============================================================
+22/02/02 07:21:08 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/02/02 07:21:08 INFO ResourceUtils: ==============================================================
+22/02/02 07:21:08 INFO SparkContext: Submitted application: HotNews
+22/02/02 07:21:08 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/02/02 07:21:08 INFO ResourceProfile: Limiting resource is cpu
+22/02/02 07:21:08 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/02/02 07:21:08 INFO SecurityManager: Changing view acls to: ruassd
+22/02/02 07:21:08 INFO SecurityManager: Changing modify acls to: ruassd
+22/02/02 07:21:08 INFO SecurityManager: Changing view acls groups to: 
+22/02/02 07:21:08 INFO SecurityManager: Changing modify acls groups to: 
+22/02/02 07:21:08 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ruassd); groups with view permissions: Set(); users  with modify permissions: Set(ruassd); groups with modify permissions: Set()
+22/02/02 07:21:08 INFO Utils: Successfully started service 'sparkDriver' on port 52169.
+22/02/02 07:21:08 INFO SparkEnv: Registering MapOutputTracker
+22/02/02 07:21:08 INFO SparkEnv: Registering BlockManagerMaster
+22/02/02 07:21:08 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/02/02 07:21:08 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/02/02 07:21:08 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/02/02 07:21:08 INFO DiskBlockManager: Created local directory at /private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/blockmgr-81e4fb24-f23f-4d5e-a81c-99f04ae2d846
+22/02/02 07:21:09 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/02/02 07:21:09 INFO SparkEnv: Registering OutputCommitCoordinator
+22/02/02 07:21:09 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/02/02 07:21:09 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.0.100:4040
+22/02/02 07:21:09 INFO SparkContext: Added JAR file:/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/21_project/target/scala-2.12/kafka-app-assembly-0.0.1.jar at spark://192.168.0.100:52169/jars/kafka-app-assembly-0.0.1.jar with timestamp 1643775668135
+22/02/02 07:21:09 INFO Executor: Starting executor ID driver on host 192.168.0.100
+22/02/02 07:21:09 INFO Executor: Fetching spark://192.168.0.100:52169/jars/kafka-app-assembly-0.0.1.jar with timestamp 1643775668135
+22/02/02 07:21:09 INFO TransportClientFactory: Successfully created connection to /192.168.0.100:52169 after 50 ms (0 ms spent in bootstraps)
+22/02/02 07:21:09 INFO Utils: Fetching spark://192.168.0.100:52169/jars/kafka-app-assembly-0.0.1.jar to /private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/spark-eb424516-0a34-4cd6-be51-d528f6542200/userFiles-febd7db8-a7de-424c-ab47-488f2824eef7/fetchFileTemp8767887446478234667.tmp
+22/02/02 07:21:10 INFO Executor: Adding file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/spark-eb424516-0a34-4cd6-be51-d528f6542200/userFiles-febd7db8-a7de-424c-ab47-488f2824eef7/kafka-app-assembly-0.0.1.jar to class loader
+22/02/02 07:21:10 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52171.
+22/02/02 07:21:10 INFO NettyBlockTransferService: Server created on 192.168.0.100:52171
+22/02/02 07:21:10 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/02/02 07:21:10 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.0.100, 52171, None)
+22/02/02 07:21:10 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.0.100:52171 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.0.100, 52171, None)
+22/02/02 07:21:10 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.0.100, 52171, None)
+22/02/02 07:21:10 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.0.100, 52171, None)
+22/02/02 07:21:10 INFO main$: <<< Started >>>
+22/02/02 07:21:10 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+22/02/02 07:21:10 INFO SharedState: Warehouse path is 'file:/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/21_project/spark-warehouse'.
+22/02/02 07:21:14 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+22/02/02 07:21:14 WARN ResolveWriteToStream: Temporary checkpoint location created which is deleted normally when the query didn't fail: /private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd. If it's required to delete it under any circumstances, please set spark.sql.streaming.forceDeleteTempCheckpointLocation to true. Important to know deleting temp checkpoint folder is best effort.
+22/02/02 07:21:14 INFO ResolveWriteToStream: Checkpoint root /private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd resolved to file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd.
+22/02/02 07:21:14 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+22/02/02 07:21:14 INFO CheckpointFileManager: Writing atomically to file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/metadata using temp file file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/.metadata.bf25640d-3119-47e7-ad5e-55b87d9807ae.tmp
+22/02/02 07:21:14 INFO CheckpointFileManager: Renamed temp file file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/.metadata.bf25640d-3119-47e7-ad5e-55b87d9807ae.tmp to file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/metadata
+22/02/02 07:21:14 INFO MicroBatchExecution: Starting [id = 1fca831f-9167-4d75-a6cc-42ec71712f53, runId = ac806e77-903e-4927-918d-4c914e879eef]. Use file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd to store the query checkpoint.
+22/02/02 07:21:14 INFO MicroBatchExecution: Reading table [org.apache.spark.sql.kafka010.KafkaSourceProvider$KafkaTable@eed97c7] from DataSourceV2 named 'kafka' [org.apache.spark.sql.kafka010.KafkaSourceProvider@1d6c82d8]
+22/02/02 07:21:14 INFO MicroBatchExecution: Starting new streaming query.
+22/02/02 07:21:14 INFO MicroBatchExecution: Stream started from {}
+22/02/02 07:21:14 INFO ConsumerConfig: ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+22/02/02 07:21:14 INFO AppInfoParser: Kafka version: 2.8.0
+22/02/02 07:21:14 INFO AppInfoParser: Kafka commitId: ebb1d6e21cc92130
+22/02/02 07:21:14 INFO AppInfoParser: Kafka startTimeMs: 1643775674982
+22/02/02 07:21:14 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Subscribed to topic(s): news
+22/02/02 07:21:15 INFO Metadata: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Cluster ID: 0aKkdYhDSWqnLjcxc4mRcQ
+22/02/02 07:21:15 INFO AbstractCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Discovered group coordinator localhost:29092 (id: 2147483646 rack: null)
+22/02/02 07:21:15 INFO AbstractCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] (Re-)joining group
+22/02/02 07:21:15 INFO AbstractCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] (Re-)joining group
+22/02/02 07:21:15 INFO AbstractCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Successfully joined group with generation Generation{generationId=1, memberId='consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1-a1c4a3de-4d5e-4698-b5d8-c9cbb1bc126f', protocol='range'}
+22/02/02 07:21:15 INFO ConsumerCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Finished assignment for group at generation 1: {consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1-a1c4a3de-4d5e-4698-b5d8-c9cbb1bc126f=Assignment(partitions=[news-0])}
+22/02/02 07:21:15 INFO AbstractCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Successfully synced group in generation Generation{generationId=1, memberId='consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1-a1c4a3de-4d5e-4698-b5d8-c9cbb1bc126f', protocol='range'}
+22/02/02 07:21:15 INFO ConsumerCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Notifying assignor about the new Assignment(partitions=[news-0])
+22/02/02 07:21:15 INFO ConsumerCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Adding newly assigned partitions: news-0
+22/02/02 07:21:15 INFO ConsumerCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Found no committed offset for partition news-0
+22/02/02 07:21:15 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Resetting offset for partition news-0 to position FetchPosition{offset=295, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 1 rack: null)], epoch=0}}.
+22/02/02 07:21:15 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Seeking to LATEST offset of partition news-0
+22/02/02 07:21:15 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Resetting offset for partition news-0 to position FetchPosition{offset=295, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 1 rack: null)], epoch=0}}.
+22/02/02 07:21:15 INFO CheckpointFileManager: Writing atomically to file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/sources/0/0 using temp file file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/sources/0/.0.87f18842-a137-4529-a0f5-e98ffb4f320d.tmp
+22/02/02 07:21:15 INFO CheckpointFileManager: Renamed temp file file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/sources/0/.0.87f18842-a137-4529-a0f5-e98ffb4f320d.tmp to file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/sources/0/0
+22/02/02 07:21:15 INFO KafkaMicroBatchStream: Initial offsets: {"news":{"0":295}}
+22/02/02 07:21:15 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Seeking to LATEST offset of partition news-0
+22/02/02 07:21:15 INFO SubscriptionState: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Resetting offset for partition news-0 to position FetchPosition{offset=295, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 1 rack: null)], epoch=0}}.
+22/02/02 07:21:15 INFO CheckpointFileManager: Writing atomically to file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/offsets/0 using temp file file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/offsets/.0.8f7875ca-4b85-41c3-a342-c37c6ba7bc1e.tmp
+22/02/02 07:21:15 INFO CheckpointFileManager: Renamed temp file file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/offsets/.0.8f7875ca-4b85-41c3-a342-c37c6ba7bc1e.tmp to file:/private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd/offsets/0
+22/02/02 07:21:15 INFO MicroBatchExecution: Committed offsets for batch 0. Metadata OffsetSeqMetadata(0,1643775675669,Map(spark.sql.streaming.stateStore.providerClass -> org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider, spark.sql.streaming.join.stateFormatVersion -> 2, spark.sql.streaming.stateStore.compression.codec -> lz4, spark.sql.streaming.stateStore.rocksdb.formatVersion -> 5, spark.sql.streaming.flatMapGroupsWithState.stateFormatVersion -> 2, spark.sql.streaming.multipleWatermarkPolicy -> min, spark.sql.streaming.aggregation.stateFormatVersion -> 2, spark.sql.shuffle.partitions -> 200))
+22/02/02 07:21:16 INFO KafkaOffsetReaderConsumer: Partitions added: Map()
+22/02/02 07:21:16 INFO KafkaOffsetReaderConsumer: Partitions added: Map()
+22/02/02 07:21:16 INFO KafkaOffsetReaderConsumer: Partitions added: Map()
+22/02/02 07:21:16 INFO KafkaOffsetReaderConsumer: Partitions added: Map()
+22/02/02 07:21:17 INFO CodeGenerator: Code generated in 280.833825 ms
+22/02/02 07:21:17 ERROR MicroBatchExecution: Query [id = 1fca831f-9167-4d75-a6cc-42ec71712f53, runId = ac806e77-903e-4927-918d-4c914e879eef] terminated with error
+java.lang.IllegalArgumentException: Expected exactly one path to be specified, but got: 
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.multiplePathsSpecifiedError(QueryExecutionErrors.scala:435)
+	at org.apache.spark.sql.execution.datasources.DataSource.planForWritingFileFormat(DataSource.scala:464)
+	at org.apache.spark.sql.execution.datasources.DataSource.planForWriting(DataSource.scala:556)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:382)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:355)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:247)
+	at HotNews.NewsConsumer$.$anonfun$writeNewsPostgres$1(NewsConsumer.scala:67)
+	at HotNews.NewsConsumer$.$anonfun$writeNewsPostgres$1$adapted(NewsConsumer.scala:64)
+	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.addBatch(ForeachBatchSink.scala:35)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:600)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:598)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:375)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:373)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:69)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:598)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:228)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:375)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:373)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:69)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:193)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:57)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:187)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:303)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:286)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:209)
+22/02/02 07:21:17 INFO ConsumerCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Revoke previously assigned partitions news-0
+22/02/02 07:21:17 INFO AbstractCoordinator: [Consumer clientId=consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1, groupId=spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0] Member consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1-a1c4a3de-4d5e-4698-b5d8-c9cbb1bc126f sending LeaveGroup request to coordinator localhost:29092 (id: 2147483646 rack: null) due to the consumer is being closed
+22/02/02 07:21:17 INFO Metrics: Metrics scheduler closed
+22/02/02 07:21:17 INFO Metrics: Closing reporter org.apache.kafka.common.metrics.JmxReporter
+22/02/02 07:21:17 INFO Metrics: Metrics reporters closed
+22/02/02 07:21:17 INFO AppInfoParser: App info kafka.consumer for consumer-spark-kafka-source-e8130055-ed6a-4c08-83ab-327d93eae053--933679479-driver-0-1 unregistered
+Exception in thread "main" org.apache.spark.sql.streaming.StreamingQueryException: Expected exactly one path to be specified, but got: 
+=== Streaming Query ===
+Identifier: [id = 1fca831f-9167-4d75-a6cc-42ec71712f53, runId = ac806e77-903e-4927-918d-4c914e879eef]
+Current Committed Offsets: {}
+Current Available Offsets: {KafkaV2[Subscribe[news]]: {"news":{"0":295}}}
+
+Current State: ACTIVE
+Thread State: RUNNABLE
+
+Logical Plan:
+SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, knownnotnull(assertnotnull(input[0, HotNews.News, true])).source, true, false) AS source#41, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, knownnotnull(assertnotnull(input[0, HotNews.News, true])).title, true, false) AS title#42, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, knownnotnull(assertnotnull(input[0, HotNews.News, true])).text, true, false) AS text#43, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, knownnotnull(assertnotnull(input[0, HotNews.News, true])).publication_date, true, false) AS publication_date#44, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, knownnotnull(assertnotnull(input[0, HotNews.News, true])).rubric, true, false) AS rubric#45, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, knownnotnull(assertnotnull(input[0, HotNews.News, true])).subrubric, true, false) AS subrubric#46, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, knownnotnull(assertnotnull(input[0, HotNews.News, true])).tags, true, false) AS tags#47]
++- MapElements HotNews.NewsConsumer$$$Lambda$1528/0x0000000800d0a040@5bccc8bc, class [Ljava.lang.String;, [StructField(value,ArrayType(StringType,true),true)], obj#40: HotNews.News
+   +- DeserializeToObject mapobjects(lambdavariable(MapObject, StringType, true, 3), cast(lambdavariable(MapObject, StringType, true, 3) as string).toString, value#29, None).array, obj#39: [Ljava.lang.String;
+      +- SerializeFromObject [mapobjects(lambdavariable(MapObject, ObjectType(class java.lang.String), true, 1), staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, lambdavariable(MapObject, ObjectType(class java.lang.String), true, 1), true, false), input[0, [Ljava.lang.String;, true], None) AS value#29]
+         +- MapElements HotNews.NewsConsumer$$$Lambda$1505/0x0000000800cf4840@5282d205, class java.lang.String, [StructField(value,StringType,true)], obj#28: [Ljava.lang.String;
+            +- DeserializeToObject cast(value#21 as string).toString, obj#27: java.lang.String
+               +- Project [cast(value#8 as string) AS value#21]
+                  +- StreamingDataSourceV2Relation [key#7, value#8, topic#9, partition#10, offset#11L, timestamp#12, timestampType#13], org.apache.spark.sql.kafka010.KafkaSourceProvider$KafkaScan@4c3d6b0b, KafkaV2[Subscribe[news]]
+
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:325)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:209)
+Caused by: java.lang.IllegalArgumentException: Expected exactly one path to be specified, but got: 
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.multiplePathsSpecifiedError(QueryExecutionErrors.scala:435)
+	at org.apache.spark.sql.execution.datasources.DataSource.planForWritingFileFormat(DataSource.scala:464)
+	at org.apache.spark.sql.execution.datasources.DataSource.planForWriting(DataSource.scala:556)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:382)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:355)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:247)
+	at HotNews.NewsConsumer$.$anonfun$writeNewsPostgres$1(NewsConsumer.scala:67)
+	at HotNews.NewsConsumer$.$anonfun$writeNewsPostgres$1$adapted(NewsConsumer.scala:64)
+	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.addBatch(ForeachBatchSink.scala:35)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:600)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:598)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:375)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:373)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:69)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:598)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:228)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:375)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:373)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:69)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:193)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:57)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:187)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:303)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:286)
+	... 1 more
+22/02/02 07:21:17 INFO SparkContext: Invoking stop() from shutdown hook
+22/02/02 07:21:17 INFO SparkUI: Stopped Spark web UI at http://192.168.0.100:4040
+22/02/02 07:21:17 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/02/02 07:21:17 INFO MemoryStore: MemoryStore cleared
+22/02/02 07:21:17 INFO BlockManager: BlockManager stopped
+22/02/02 07:21:17 INFO BlockManagerMaster: BlockManagerMaster stopped
+22/02/02 07:21:17 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/02/02 07:21:17 INFO SparkContext: Successfully stopped SparkContext
+22/02/02 07:21:17 INFO ShutdownHookManager: Shutdown hook called
+22/02/02 07:21:17 INFO ShutdownHookManager: Deleting directory /private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/temporary-e71d191f-7e9e-402c-b79e-f0a26ff9c3fd
+22/02/02 07:21:17 INFO ShutdownHookManager: Deleting directory /private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/spark-5ac173c5-cd1a-447a-b4d4-c75336f6522d
+22/02/02 07:21:17 INFO ShutdownHookManager: Deleting directory /private/var/folders/_9/7153h1993dqc672g112stpkd94w4mf/T/spark-eb424516-0a34-4cd6-be51-d528f6542200

@@ -43,7 +43,7 @@ object NewsProducer {
         val msg = s"${i.toString};&#${news.source};&#${news.title};&#${news.text};&#${news.publication_date}"
         println(s"\n>>> $msg\n")
         producer.send(new ProducerRecord(topic, null, msg))
-        Thread.sleep(100)
+//        Thread.sleep(10)
     }
 
     println("\n>>> Новости отправлены в Кафку!!!\n")

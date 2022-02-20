@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(assembly, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: assembly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/21_project_hot_news_etl_batch/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/21_project_hot_news_etl_batch/src/main/scala/HotNews/NewsConsumer.scala:81:103: too many arguments (2) for method coalesce: (numPartitions: Int)org.apache.spark.sql.Dataset[HotNews.News][0m
+[0m[[0m[31merror[0m] [0m[0m      .coalesce(unix_timestamp(substring(col("publication_date"), 1, 19), "yyyy-MM-dd'T'HH:mm:ss"),lit(0)).as("publication_uts")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 21 Feb 2022, 00:11:51[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(all {file:/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/13_kafka/}parser/products {file:/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/13_kafka/}parser/test:products, None, None)[0m
+[0m[[0m[31merror[0m] [0m[0mInvalid URI[0m
+[0m[[0m[31merror[0m] [0m[0mExpected end of input.[0m
+[0m[[0m[31merror[0m] [0m[0mExpected '}'[0m
+[0m[[0m[31merror[0m] [0m[0mall {file:/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/13_kafka/}parser/products {file:/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/13_kafka/}parser/test:products[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

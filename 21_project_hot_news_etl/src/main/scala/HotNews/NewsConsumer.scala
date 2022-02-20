@@ -36,8 +36,8 @@ object NewsConsumer {
       .option("group_id", "consumer1")
       .option("subscribe", topic)
       .option("failOnDataLoss", false)
-      .option("startingOffset", "earliest")
-      //      .option("startingOffset","latest")
+//      .option("startingOffset","latest")
+      .option("startingOffset","earliest")
       .load()
       .selectExpr("CAST(value AS STRING)")
       .as[String]
@@ -197,7 +197,22 @@ object NewsConsumer {
   }
 
   // Такая агрегация не работает в стриминге, чтобы при этом еще и писать результат в БД
-  // См. пункт "" по этой ссылке:
+  // См. пункт "Unsupported Operations" по этой ссылке:
+  // https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#handling-late-data-and-watermarking
+  //
+  // There are a few DataFrame/Dataset operations that are not supported with streaming DataFrames/Datasets. Some of them are as follows.
+  //
+  //Multiple streaming aggregations (i.e. a chain of aggregations on a streaming DF) are not yet supported on streaming Datasets.
+  //
+  //Limit and take the first N rows are not supported on streaming Datasets.
+  //
+  //Distinct operations on streaming Datasets are not supported.
+  //
+  //Deduplication operation is not supported after aggregation on a streaming Datasets.
+  //
+  //Sorting operations are supported on streaming Datasets only after an aggregation and in Complete Output Mode.
+  //
+  //Few types of outer joins on streaming Datasets are not supported. See the support matrix in the Join Operations section for more details.
   //
   def createSlideAggWindow(df: DataFrame): DataFrame = {
     df

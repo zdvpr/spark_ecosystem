@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.commons-csv
+Built-By: ggregory
+Bnd-LastModified: 1580606320610
+Implementation-Vendor-Id: org.apache
+Specification-Title: Apache Commons CSV
+Bundle-DocURL: https://commons.apache.org/proper/commons-csv/
+Include-Resource: checkstyle/checkstyle-suppressions.xml=src/main/reso
+ urces/checkstyle/checkstyle-suppressions.xml,findbugs/findbugs-exclud
+ e-filter.xml=src/main/resources/findbugs/findbugs-exclude-filter.xml,
+ pmd/pmd-ruleset.xml=src/main/resources/pmd/pmd-ruleset.xml,META-INF/L
+ ICENSE.txt=LICENSE.txt,META-INF/NOTICE.txt=NOTICE.txt
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Export-Package: org.apache.commons.csv;version="1.8"
+Bundle-Name: Apache Commons CSV
+Build-Jdk-Spec: 1.8
+Implementation-Title: Apache Commons CSV
+Bundle-Description: The Apache Commons CSV library provides a simple i
+ nterface for reading and writing CSV files of various types.
+Implementation-Version: 1.8
+Specification-Vendor: The Apache Software Foundation
+Bundle-ManifestVersion: 2
+Bundle-Vendor: The Apache Software Foundation
+Tool: Bnd-4.2.0.201903051501
+Implementation-Vendor: The Apache Software Foundation
+Bundle-Version: 1.8.0
+X-Compile-Target-JDK: 1.8
+Implementation-Build: release@r660f7c9f853092ec8abf5d6c81d260e3c80c219
+ 4; 2020-02-02 01:15:18+0000
+Private-Package: checkstyle,findbugs,pmd
+X-Compile-Source-JDK: 1.8
+Created-By: Apache Maven Bundle Plugin
+Specification-Version: 1.8
+Build-Jdk: 1.8.0_241
+

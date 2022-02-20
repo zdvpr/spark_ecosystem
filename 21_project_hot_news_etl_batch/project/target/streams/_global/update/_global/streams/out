@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/21_project_hot_news_etl_batch/project/"), "root-21_project_hot_news_etl_batch-build")...[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnrecognized repository Scala Plugin Bundled Repository, ignoring it[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/Users/ruassd/trn/Scala/ecosystem/0_ДЗ/spark_ecosystem/21_project_hot_news_etl_batch/project/"), "root-21_project_hot_news_etl_batch-build")[0m
